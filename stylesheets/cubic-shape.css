@@ -1,0 +1,136 @@
+/*---------------------------------------------------------------------
+	Global Style
+----------------------------------------------------------------------*/
+body {
+	width: 100%;
+	margin: 0;
+}
+
+h1 {
+	margin: 0;
+	text-align: center;
+}
+
+p {
+	margin: 0;
+	padding-top: 2em;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2em;
+}
+
+/*	Header Section
+----------------------------------------------------------------------*/
+header {
+	background-color: gray;
+}
+
+/*	Main Section
+----------------------------------------------------------------------*/
+.main {
+	height: 90.6vh;
+	background-color: lightgray;
+}
+
+.continer {
+	width: 85vw;
+	height: 70vh;
+	margin: 2em auto;
+	background-color: gray;
+	display: flex;
+	justify-content: center;
+	perspective: 700px;
+	perspective-origin: center;
+}
+
+.continer p {
+	padding: 0;
+	margin: 0;
+}
+
+.continer .cubic-shape {
+	position: relative;
+	margin-top: 10em;
+/*	translate3d(0px, 0px, -150px)*/
+	transform: rotate3d(0, 0, 0, 180deg);
+	transform-origin: center center 0px;
+	transform-style: preserve-3d;
+}
+
+.cubic-shape div {
+	position: absolute;
+}
+
+.continer #front-face {
+	width: 300px;
+	height: 200px;
+	background-color: hsla(0, 63%, 45%, 0.3);
+	transform: translate3d(-51px, 0px, 296px) scale3d(1.0, 1.0, 1.0) rotate3d(1, 0, 0, 0deg);
+	transform-origin: center center 0px;
+	border: 3px solid #000;
+}
+
+
+.continer #back-face {
+	width: 300px;
+	height: 200px;
+	background-color: hsla(0, 19%, 40%, 1.0);
+	transform: translate3d(-50px, 0px, -10px) scale3d(1.0, 1.0, 1.0) rotate3d(0, 1, 0, 180deg);
+	transform-origin: center center 0px;
+	border: 3px solid #000;
+}
+
+
+.continer #left-face {
+	width: 300px;
+	height: 200px;	
+	background-color: hsla(248, 24%, 19%, 0.3);
+/*	background-color: #000;*/
+/*	transform: translate3d(-202px, 0px, 150px) scale3d(1.0, 1.0, 1.0) rotate3d(0, 1, 0, 90deg);
+	transform-origin: center center 0px;*/
+
+	transform: translate3d(-203px, 0px, 143px) scale3d(1.0, 1.0, 1.0) rotate3d(0, 1, 0, -90deg);
+	transform-origin: center center 0px;
+	border: 3px solid #000;	
+}
+
+
+.continer #right-face {
+	width: 300px;
+	height: 200px;	
+	background-color: hsla(330, 100%, 60%, 1.0);
+	transform: translate3d(102px, 0px, 143px) scale3d(1.0, 1.0, 1.0) rotate3d(0, 1, 0, 90deg);
+	transform-origin: center center 0px;
+	border: 3px solid #000;
+}
+
+
+.continer #bottom-face {
+	width: 300px;
+	height: 300px;	
+	background-color: hsla(245, 6%, 43%, 1.0);
+	transform: translate3d(-50px, 50px, 143px) scale3d(1.0, 1.0, 1.0) rotate3d(1, 0, 0, -90deg);
+	transform-origin: center center 0px;
+	border: 3px solid #000
+}
+
+
+.continer #top-face {
+	width: 300px;
+	height: 300px;	
+	background-color: hsla(89, 6%, 59%, 1.0);
+	transform: translate3d(-50px, -153px, 143px) scale3d(1.0, 1.0, 1.0) rotate3d(1, 0, 0, 90deg);
+	transform-origin: center center 0px;
+	border: 3px solid #000;
+}
+/*	Footer Section
+----------------------------------------------------------------------*/
+footer {
+	background-color: #000;
+}
+
+footer p {
+	padding: 0;
+	color: #fff;
+	text-transform: none;
+}
